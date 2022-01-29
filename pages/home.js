@@ -132,7 +132,7 @@ export default function Home(){
                             [1,2,3,4,5,6].map((vl)=>(
 
                                
-                            <div className="h-[290px] w-[828px] inline-flex shadow-lg">
+                            <div className="h-[290px] w-[828px] inline-flex shadow-lg grayscale" key={vl}>
                                 {/* <div className="w-[265px] h-full bg-yellow-200"></div> */}
                                 <Image src="/images/MissBrooke.png" width={265} height={290} />
                                 <div className="h-full w-[563px] py-12 px-4 flex flex-col space-y-3">
