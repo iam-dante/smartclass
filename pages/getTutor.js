@@ -3,6 +3,7 @@ import { Listbox, Transition } from '@headlessui/react'
 
 import { FindSvg } from '../public/svg'
 import NavigationBar from '../components/navigationBar'
+import Footer from '../components/Footer'
 
 
 export default function GerTutor(){
@@ -36,7 +37,7 @@ export default function GerTutor(){
         
     return(
         <div>
-            <div className="h-screen bg-cyanblue-200">
+            <div className="h-screen ">
                 <NavigationBar/>
                 <div className="grid grid-cols-2">
                 <div className=" flex justify-center items-center">
@@ -165,10 +166,18 @@ export default function GerTutor(){
 
             </div>
 
-            <div className="h-[500px] bg-white flex justify-center items-center flex-col space-y-4">
+            {/* <div className="h-[500px]  flex justify-center items-center flex-col space-y-4 bg-cyanblue-200">
                 <h className="text-5xl font-medium text-center w-[840px]">Earn extra income on your free time by teaching people around you</h>
-                <span className="px-6 py-4 bg-cyanblue-200 text-lg rounded-md text-cyan-600">Become a tutor</span>
+                <span className="px-6 py-4 bg-cyanblue-300 text-lg rounded-md text-cyan-600">Become a tutor</span>
+            </div> */}
+
+            <div className="h-[600px] w-full bg-fixed bg-cover bg-center  backdrop-blur-lg bg-no-repeat flex justify-center items-center " style={{backgroundImage: "url('/images/teaching.jpg')"}}>
+                <div className=" flex justify-center items-center flex-col space-y-4 backdrop-blur-sm backdrop-contrast-75 w-full h-full">
+                    <h className="text-5xl font-medium text-center w-[840px] text-gray-800">Earn extra income on your free time by teaching people around you</h>
+                    <span className="px-6 py-4 bg-cyanblue-100 text-lg rounded-md text-cyan-600">Become a tutor</span>
+                </div>
             </div>
+            <Footer/>
         </div>
 )
 }

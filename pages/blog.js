@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { useRouter } from "next/router"
+import Footer from "../components/Footer"
 
 import NavigationBar from "../components/navigationBar"
 import { PhoneIcon, EmailIcon, EmailSendIcon, FaceBookIcon, TwitterIcon, InstagramIcon, LinkIcon } from "../public/svg"
@@ -10,10 +11,11 @@ export default  function Blog(){
 
     
     return(
-        <div className="h-screen ">
-            <NavigationBar/>
+        <div className="">
+        <NavigationBar/>
+        <div className="">
 
-                <div className="grid grid-cols-8 h-96">
+                <div className="grid grid-cols-8 ">
                     <div className="col-span-2  flex flex-col px-8 space-y-4  py-4">
                         {/* <div className="grid grid-rows-3">
                             <div className="bg-yellow-200 "></div>
@@ -81,7 +83,8 @@ export default  function Blog(){
                     </div>
 
                 </div>
-
+        </div>
+        <Footer/>
         </div>
     )
 }

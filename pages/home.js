@@ -3,10 +3,10 @@ import Image from "next/image"
 
 import {SearchSvg, MessageSvg, BookingSvg, LearningSvg }from "../public/svg"
 import NavigationBar from "../components/navigationBar"
+import Footer from "../components/Footer"
 
 
 export default function Home(){
-    let list =["Get a tutor","Become a tutor","Jobs","Courses","Instant","Register","Careers","Competition"]
     
     return(
         <div>
@@ -128,14 +128,11 @@ export default function Home(){
 
                     <div className="flex flex-row space-x-20 w-fit px-96 ">
                         
-                        {
-                            [1,2,3,4,5,6].map((vl)=>(
 
                                
-                            <div className="h-[290px] w-[828px] inline-flex shadow-lg grayscale" key={vl}>
-                                {/* <div className="w-[265px] h-full bg-yellow-200"></div> */}
-                                <Image src="/images/MissBrooke.png" width={265} height={290} />
-                                <div className="h-full w-[563px] py-12 px-4 flex flex-col space-y-3">
+                            <div className="h-[290px] w-[900px] inline-flex shadow-lg snap-center">
+                                <Image src="/images/MissBrooke.png" width={265} height={290} className="grayscale hover:grayscale-0" />
+                                <div className="h-full w-[563px] py-6 px-4 flex flex-col space-y-3">
                                     <h> I had an incredible experience with my tutor as well as SmartClass. The tutor was well prepared, she comes on time and my performance eventually increased for the first time ever for the subject that I considered hard for me. I benefited a lot from a very personalized and tailored one-one classes from SmartClass. I hope you continue to touch the lives of many students through the amazing service you provide.</h>
                                     <div className="flex flex-col space-y-2">
                                         <h className="text-xl font-medium">Miss Brooke Tesfaye</h>
@@ -143,9 +140,33 @@ export default function Home(){
                                     </div>
                                 </div>
                         
-                            </div>  
-                            ))
-                        }
+                            </div> 
+
+                            <div className="h-[290px] w-[900px] inline-flex shadow-lg  snap-center">
+                               
+                                <Image src="/images/MissMunena.png" width={350} height={290} className="grayscale hover:grayscale-0"/>
+                                <div className="h-full w-full py-6 px-4 flex flex-col space-y-3">
+                                    <h>I really love math. I love teaching math. In the past, I had no way that I could teach math to students until when I heard about the awesome SmartClass platform. I was so convinced from the start about how impactful can SmartClass be because of the power of personalised learning advantages. Now, despite being a student at the University of Dar-es-Salaam, I am able to help lots of students in math while at the same time growing my income. I am so thrilled that at least I can share my math skills with lots of other people. In one world I would say SmartClass is AWESOME!!</h>
+                                    <div className="flex flex-col space-y-2">
+                                        <h className="text-xl font-medium">Miss Maria Munena</h>
+                                        <h className="text-cyanblue-300 text-lg">Tutor</h>
+                                    </div>
+                                </div>
+                            </div> 
+
+
+                            <div className="h-[290px] w-[900px] inline-flex shadow-lg snap-center"> 
+                                <Image src="/images/KerstinJoseph.png" width={400} height={290}  className="grayscale hover:grayscale-0"/>
+                                <div className="h-full w-full py-6 px-4 flex flex-col space-y-3">
+                                    <h>I am third year student at the University of Dar-es-Salaam, pursuing Bachelor of Science in Molecular Biology and Biotechnology. In, my extra time I teach biology to secondary students in nearby location. This is only possible because of awesome SmartClass platform which gives me opportunity to connect with hundreds of students. Through SmartClass I have been able to substantially grow my income and at the same time helping students succeed in their studies. </h>
+                                    <div className="flex flex-col space-y-2">
+                                        <h className="text-xl font-medium">Kerstin Joseph</h>
+                                        <h className="text-cyanblue-300 text-lg">Tutor</h>
+                                    </div>
+                                </div>
+                            </div>
+                             
+                      
 
                     
                     </div>
@@ -155,7 +176,7 @@ export default function Home(){
                 <div className=" w-full">
                 {/* <img  className="h-3/4 w-full bg-cover bg-center opacity-70 bg-no-repeat" style={{backgroundImage: "url('/images/news.jpeg')"}}/> */}
                 <div className="h-[600px] w-full bg-fixed bg-cover bg-center  backdrop-blur-lg bg-no-repeat " style={{backgroundImage: "url('/images/news.jpeg')"}}>
-                    <div className="backdrop-blur-sm flex justify-center items-center flex-col h-full  space-y-6 backdrop-contrast-75">
+                    <div className="backdrop-blur-sm flex justify-center items-center flex-col h-full  space-y-6 c">
 
                         <h className="text-4xl text-white">Stay Updated</h>
                         <h className="text-white text-2xl font-semibold">Get all the news, articles, promotions and many more straight into your inbox</h>
@@ -165,39 +186,9 @@ export default function Home(){
                 </div>
                 </div>
 
-                <div className="grid grid-cols-3 h-[500px] pt-20 pl-20">
-                <div className="flex flex-col space-y-4">
-                    <h className="text-4xl">Smart Class </h>
-                    <h className="text-3xl font-semibold">Love what we do?</h>
-                    <h className="text-xl w-80 leading-loose">Do you appreciate what we do and would like to be part of this winning team? </h>
-                    <h className="text-base">Just drop us an email and we&apos;ll get in touch with you.</h>
-                    <h>investor@smartclass-tz.com</h>
-                </div>
 
-                <div className="flex flex-col space-y-4 ">
-                    <h className="text-xl font-semibold">Quick Links</h>
-                    {
-                    list.map((vl)=>(
-                        <h className="text-lg" key={vl}>{vl}</h>
-                    ))
-                    }
-                </div>
 
-                <div className="flex flex-col  space-y-4">
-                    <h className="text-xl font-semibold">Contact</h>
-                <p className="w-56 text-lg leading-loose">Physical location
-                    University of Dar es Salaam.
-                    UDBS Building, UDIEC Block,
-                    Ground Floor, Room B213.
-                    P. O. Box 36317,
-                    Dar es Salaam,
-                    Tanzania.</p>
-                </div>
-                </div>
-
-                <div className="border-t-2 border-b-gray-900 h-24 flex justify-center items-center text-slate-500 mx-20">
-                <h>SmartClass is a product of  SmartClass LLC. © Copyright 2022. All rights reserved.</h>
-                </div>
+                <Footer/>
         </div>
 )
 }
