@@ -64,7 +64,7 @@ export default function GerTutor(){
                             key={ct.id}
                             value={ct}
                             // disabled={p.unavailable}
-                            className="hover:bg-cyanblue-300 px-2 py-2 rounded-md"
+                            className="hover:bg-blue-200 px-2 py-2 rounded-md"
                         >
                             {ct.name}
                         </Listbox.Option>
@@ -118,7 +118,7 @@ export default function GerTutor(){
                             key={ct.id}
                             value={ct}
                             // disabled={p.unavailable}
-                            className="hover:bg-cyanblue-300 px-2 py-2 rounded-md"
+                            className="hover:bg-blue-200 px-2 py-2 rounded-md"
                         >
                             {ct.name}
                         </Listbox.Option>
@@ -144,7 +144,7 @@ export default function GerTutor(){
                             key={ct.id}
                             value={ct}
                             // disabled={p.unavailable}
-                            className="hover:bg-cyanblue-300 px-2 py-2 rounded-md"
+                            className="hover:bg-blue-200 px-2 py-2 rounded-md"
                         >
                             {ct.name}
                         </Listbox.Option>
@@ -155,7 +155,7 @@ export default function GerTutor(){
 
                     <h className="text-slate-400">Optional</h>
                     <label>Number of student</label>
-                    <input className="h-12 px-4" placeholder="Number of students"/>
+                    <input className="h-12 px-4 outline-none focus:outline-cyanblue-300 rounded-md" placeholder="Number of students"/>
                     <div className="flex justify-end">
                     <span className="px-12 py-4  bg-[#D9F6FF]  text-[#005D7A] rounded-sm font-medium">Find Tutor</span> 
                     </div>
@@ -172,8 +172,8 @@ export default function GerTutor(){
             </div> */}
 
             <div className="h-[600px] w-full bg-fixed bg-cover bg-center  backdrop-blur-lg bg-no-repeat flex justify-center items-center " style={{backgroundImage: "url('/images/teaching.jpg')"}}>
-                <div className=" flex justify-center items-center flex-col space-y-4 backdrop-blur-sm backdrop-contrast-75 w-full h-full">
-                    <h className="text-5xl font-medium text-center w-[840px] text-gray-800">Earn extra income on your free time by teaching people around you</h>
+                <div className=" flex justify-center items-center flex-col space-y-4 backdrop-blur-md backdrop-contrast-75 w-full h-full">
+                    <h className="text-5xl font-medium text-center w-[840px] text-white ">Earn extra income on your free time by teaching people around you</h>
                     <span className="px-6 py-4 bg-cyanblue-100 text-lg rounded-md text-cyan-600">Become a tutor</span>
                 </div>
             </div>
