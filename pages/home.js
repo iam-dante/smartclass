@@ -61,7 +61,7 @@ export default function Home(){
                         <span className="px-4 py-4 bg-cyanblue-300 text-xl text-white">1</span>
                         <h1 className="text-5xl">It all begins with a search</h1>
                         </div>
-                        <p className="w-3/4 text-xl leading-loose">Simply enter your subject, level, teaching type and your location to view a tailored list of the best tutors in your area. Each tutor has a full profile, which is vetted before they are set live on the site, so you can confidently select the right tutor for you! If the initial tutor can’t help, we will help you to find an alternative tutor who meets all of your needs.</p>
+                        <p className="w-3/4 text-xl leading-loose">Simply enter your subject, level, teaching type and your location to view a tailored list of the best tutors in your area. Each tutor has a full profile, which is vetted before they are set live on the site, so you can confidently select the right tutor for you! If the initial tutor can&apos;t help, we will help you to find an alternative tutor who meets all of your needs.</p>
                     </div>
                     </div>
                     <div className="w-1/4 h-full  flex  items-center">
@@ -113,7 +113,7 @@ export default function Home(){
                             <span className="px-4 py-4 bg-cyanblue-200 text-lg ">4</span>
                             <h1 className="text-4xl">Start learning and Rate your tutor</h1>
                         </div>
-                        <p className=" text-xl leading-loose">Upon confirming the schedule, your tutor will prepare an individualized learning plan to help you reach your goals. Every lesson will be tailored to your needs. Research demonstrates that, a one-to-one tuition leads to an additional five months’ progress.</p>
+                        <p className=" text-xl leading-loose">Upon confirming the schedule, your tutor will prepare an individualized learning plan to help you reach your goals. Every lesson will be tailored to your needs. Research demonstrates that, a one-to-one tuition leads to an additional five months&apos; progress.</p>
                         </div>
                     </div>
                     </div>
@@ -172,7 +172,7 @@ export default function Home(){
                     <h className="text-4xl">Smart Class </h>
                     <h className="text-3xl font-semibold">Love what we do?</h>
                     <h className="text-xl w-80 leading-loose">Do you appreciate what we do and would like to be part of this winning team? </h>
-                    <h className="text-base">Just drop us an email and we'll get in touch with you.</h>
+                    <h className="text-base">Just drop us an email and we&apos;ll get in touch with you.</h>
                     <h>investor@smartclass-tz.com</h>
                 </div>
 

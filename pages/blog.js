@@ -7,6 +7,8 @@ import { PhoneIcon, EmailIcon, EmailSendIcon, FaceBookIcon, TwitterIcon, Instagr
 
 export default  function Blog(){
     const router = useRouter
+
+    
     return(
         <div className="h-screen ">
             <NavigationBar/>
@@ -22,7 +24,7 @@ export default  function Blog(){
                         
                             {/* <div className="bg-gray-200 h-[402px] w-[401px] rounded-xl"></div> */}
 
-                            <iframe  className="h-[402px] w-[401px] rounded-lg" src="https://www.youtube.com/embed/1rtd9EIYO5w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe  className="h-[402px] w-[401px] rounded-lg" src="https://www.youtube.com/embed/1rtd9EIYO5w" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                             <div className="w-[404px] h-[228px] border-t-2 border-b-2 border-black flex justify-center items-center">
                                 <div className="h-[145px] w-[404px] bg-cyanblue-200 flex justify-center py-4 flex-col items-center space-y-4">
                                     <h className="text-xl font-semibold text-cyanblue-400">Want to advertise here?</h>
