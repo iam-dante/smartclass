@@ -43,7 +43,7 @@ export default  function Blog(){
                             </div>
                             <div className="bg-cyanblue-200 h-[160px] w-[403px] flex justify-center items-center flex-col space-y-6">
                                 <h className="font-semibold text-cyanblue-400 text-xl">Subscibe to newsletter</h>
-                                <span className className="h-[47px] w-[350px] px-4 space-x-4 flex justify-center items-center bg-white">
+                                <span className="h-[47px] w-[350px] px-4 space-x-4 flex justify-center items-center bg-white">
                                     <input className="h-[47px] w-[319px] px-4 outline-none" placeholder="Enter your email address"/>
                                     <EmailSendIcon/>
                                 </span>
