@@ -19,5 +19,7 @@ module.exports = {
       serif: ['"DM Serif Display"', 'serif']
     }
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar')
+  ],
 }

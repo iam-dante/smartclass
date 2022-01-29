@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 
 import {SearchSvg, MessageSvg, BookingSvg, LearningSvg }from "../public/svg"
 import NavigationBar from "../components/navigationBar"
@@ -9,14 +10,14 @@ export default function Home(){
     
     return(
         <div>
-            <div className="h-screen mx-auto">
+            <div className="h-screen mx-auto bg-slate-100">
 
                 <NavigationBar/>
 
-                <div className="grid grid-cols-1 grid-rows-2 lg:grid-cols-2">
+                <div className="grid grid-cols-1 grid-rows-2 lg:grid-cols-2 ">
                 <div className="pl-6 md:pl-20 space-y-12">
-                    <h1 className="mt-24 md:mt-48 text-5xl xl:text-9xl w-3 md:w-9 font-serif">Education Reimagined</h1>
-                    <p className="w-3/4 lg:w-[511px] text-1xl md:text-2xl leading-loose">Find a class for your personal enrichment or to build your profesional opportunities</p>
+                        <h1 className="mt-24 md:mt-48 text-5xl xl:text-9xl w-3 md:w-9 font-serif">Education Reimagined</h1>
+                        <p className="w-3/4 lg:w-[511px] text-1xl md:text-2xl leading-loose">Find a class for your personal enrichment or to build your profesional opportunities</p>
                     <div className="space-x-8">
                         <Link href="/getTutor">
                             <a className="px-10 py-5 text-sm md:text-lg bg-cyanblue-300 text-white font-medium rounded-sm">Get Started</a>
@@ -36,11 +37,11 @@ export default function Home(){
 
                 <div className="p-6 md:p-20 space-y-10">
                     <div className="space-y-10  flex justify-center flex-col items-center  h-80">
-                        <h1 className="text-xl md:text-3xl font-serif uppercase text-slate-500 ">About us</h1>
+                        <h1 className="text-xl md:text-3xl font-serif uppercase text-[#8E8B8B] ">About us</h1>
                         <p className="text-xl lg:text-2xl w-[914px] flex justify-center text-center leading-loose">SmartClass is the leading leader in online education rendering personalized learning experiences to lots of students and business professionals in infinite subjects in Africa. SmartClass is an online platform that connects learners/students to very qualified and certified private tutors/experts both online and offline. SmartClass does this by capitalizing on big data analytics and using advanced algorithmic matching between students and tutors.</p>
                     </div>
                     <div>
-                        <h1 className="text-xl md:text-3xl  font-serif uppercase flex justify-center">Our Sponsors</h1>
+                        <h1 className="text-xl md:text-3xl  font-serif uppercase flex justify-center text-[#8E8B8B]">Our Sponsors</h1>
                         <div className="  flex justify-around ">
                         <img src="/images/commonwealth.jpeg" className="grayscale hover:grayscale-0 h-48"/>
                         <img src="/images/tonyfoundation.png" className="grayscale hover:grayscale-0"/>
@@ -50,7 +51,7 @@ export default function Home(){
                 </div>
 
                 <div className="bg-cyanblue-100 p-20 space-y-24 ">
-                <h1 className="flex justify-center text-3xl font-serif uppercase">How it works</h1>
+                <h1 className="flex justify-center text-3xl font-serif uppercase text-[#8E8B8B]">How it works</h1>
 
                 
 
@@ -121,49 +122,46 @@ export default function Home(){
                 </div>
 
                 <div className="px-20 py-20 space-y-8 "> 
-                <h1 className="text-4xl flex justify-center uppercase font-serif ">What our clients say</h1>
+                <h1 className="text-3xl flex justify-center uppercase font-serif  text-[#8E8B8B]">What our clients say</h1>
 
-                <div className="overflow-x-auto scrollbar scrollbar-thin">
+                <div className="overflow-x-auto scrollbar scrollbar-thin scrollbar-thumb-cyanblue-400 py-6 snap-x snap-mandatory">
 
-                    <div className="bg-blue-500 flex flex-row space-x-11 w-fit">
-                    <div className="w-[900px] rounded-xl flex justify-center items-center px-12 py-12  flex-col space-y-2 shadow-lg bg-cyanblue-300">
-                        <img src="/images/MissBrooke.png" alt="" className="h-32 w-32 items-center rounded-full grayscale"/>
-                        <p className="text-center  text-lg text-white "> I had an incredible experience with my tutor as well as SmartClass. The tutor was well prepared, she comes on time and my performance eventually increased for the first time ever for the subject that I considered hard for me. I benefited a lot from a very personalized and tailored one-one classes from SmartClass. I hope you continue to touch the lives of many students through the amazing service you provide.</p>
-                        <h className="font-medium  text-xl">Miss Brooke Tesfaye</h>
-                        <h className="text-white text-base font-semibold">Student</h>
-                    </div>
+                    <div className="flex flex-row space-x-20 w-fit px-96 ">
+                        
+                        {
+                            [1,2,3,4,5,6].map((vl)=>(
 
-                    <div className=" w-[900px]  rounded-xl flex justify-center items-center px-12 py-12  flex-col space-y-2 shadow-lg bg-cyanblue-300">
-                        <img src="/images/MissBrooke.png" alt="" className="h-32 w-32 items-center rounded-full grayscale"/>
-                        <p className="text-center  text-lg "> I had an incredible experience with my tutor as well as SmartClass. The tutor was well prepared, she comes on time and my performance eventually increased for the first time ever for the subject that I considered hard for me. I benefited a lot from a very personalized and tailored one-one classes from SmartClass. I hope you continue to touch the lives of many students through the amazing service you provide.</p>
-                        <h className="font-medium  text-xl text-white ">Miss Brooke Tesfaye</h>
-                        <h className="text-cyanblue-400 text-base font-semibold">Student</h>
-                    </div>
+                               
+                            <div className="h-[290px] w-[828px] inline-flex shadow-lg">
+                                {/* <div className="w-[265px] h-full bg-yellow-200"></div> */}
+                                <Image src="/images/MissBrooke.png" width={265} height={290} />
+                                <div className="h-full w-[563px] py-12 px-4 flex flex-col space-y-3">
+                                    <h> I had an incredible experience with my tutor as well as SmartClass. The tutor was well prepared, she comes on time and my performance eventually increased for the first time ever for the subject that I considered hard for me. I benefited a lot from a very personalized and tailored one-one classes from SmartClass. I hope you continue to touch the lives of many students through the amazing service you provide.</h>
+                                    <div className="flex flex-col space-y-2">
+                                        <h className="text-xl font-medium">Miss Brooke Tesfaye</h>
+                                        <h className="text-cyanblue-300 text-lg">Student</h>
+                                    </div>
+                                </div>
+                        
+                            </div>  
+                            ))
+                        }
 
-                    <div className=" w-[900px]  rounded-xl flex justify-center items-center px-12 py-12  flex-col space-y-2 shadow-lg bg-cyanblue-300">
-                        <img src="/images/MissBrooke.png" alt="" className="h-32 w-32 items-center rounded-full grayscale"/>
-                        <p className="text-center  text-lg "> I had an incredible experience with my tutor as well as SmartClass. The tutor was well prepared, she comes on time and my performance eventually increased for the first time ever for the subject that I considered hard for me. I benefited a lot from a very personalized and tailored one-one classes from SmartClass. I hope you continue to touch the lives of many students through the amazing service you provide.</p>
-                        <h className="font-medium  text-xl text-white ">Miss Brooke Tesfaye</h>
-                        <h className="text-cyanblue-400 text-base font-semibold">Student</h>
-                    </div>
-
-                    <div className=" w-[900px]  rounded-xl flex justify-center items-center px-12 py-12  flex-col space-y-2 shadow-lg bg-cyanblue-300">
-                        <img src="/images/MissBrooke.png" alt="" className="h-32 w-32 items-center rounded-full grayscale"/>
-                        <p className="text-center  text-lg "> I had an incredible experience with my tutor as well as SmartClass. The tutor was well prepared, she comes on time and my performance eventually increased for the first time ever for the subject that I considered hard for me. I benefited a lot from a very personalized and tailored one-one classes from SmartClass. I hope you continue to touch the lives of many students through the amazing service you provide.</p>
-                        <h className="font-medium  text-xl text-white ">Miss Brooke Tesfaye</h>
-                        <h className="text-cyanblue-400 text-base font-semibold">Student</h>
-                    </div>
+                    
                     </div>
                 </div>
                 </div>
 
                 <div className=" w-full">
                 {/* <img  className="h-3/4 w-full bg-cover bg-center opacity-70 bg-no-repeat" style={{backgroundImage: "url('/images/news.jpeg')"}}/> */}
-                <div className="h-[600px] w-full bg-cover bg-center bg-opacity-9 space-y-6 bg-black bg-no-repeat flex justify-center items-center flex-col" style={{backgroundImage: "url('/images/news.jpeg')"}}>
-                    <h className="text-4xl text-white">Stay Updated</h>
-                    <h className="text-white text-2xl font-semibold">Get all the news, articles, promotions and many more straight into your inbox</h>
-                    <input className="h-12 w-96 px-6 rounded-md" placeholder="Enter your email address"/>
-                    <span className="bg-cyanblue-400 text-white px-12 py-4 rounded-md">Subscribe</span>
+                <div className="h-[600px] w-full bg-fixed bg-cover bg-center  backdrop-blur-lg bg-no-repeat " style={{backgroundImage: "url('/images/news.jpeg')"}}>
+                    <div className="backdrop-blur-sm flex justify-center items-center flex-col h-full  space-y-6 backdrop-contrast-75">
+
+                        <h className="text-4xl text-white">Stay Updated</h>
+                        <h className="text-white text-2xl font-semibold">Get all the news, articles, promotions and many more straight into your inbox</h>
+                        <input className="h-12 w-96 px-6 rounded-md" placeholder="Enter your email address"/>
+                        <span className="bg-cyanblue-400 text-white px-12 py-4 rounded-md">Subscribe</span>
+                    </div>
                 </div>
                 </div>
 
