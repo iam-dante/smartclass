@@ -4,12 +4,14 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        
         cyanblue: {
           400:"#0F4B5F",
          300 : '#009DCF',
          200:"#D9F6FF",
          100:"#E8F5FA",
         },
+        
       }
     },
     fontFamily:{

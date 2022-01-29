@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Listbox, Transition } from '@headlessui/react'
 
 import { FindSvg } from '../public/svg'
+import NavigationBar from '../components/navigationBar'
 
 
 export default function GerTutor(){
@@ -36,16 +37,7 @@ export default function GerTutor(){
     return(
         <div>
             <div className="h-screen bg-cyanblue-200">
-                <div className="relative flex justify-center items-center">
-                    <h1 className="absolute left-8 top-8 md:left-16 text-3xl">SmartClass</h1>
-                    <div className=" hidden lg:h-24  lg:flex lg:flex-row lg:items-center lg:justify-center lg:space-x-14">
-                    <h1>Home</h1>
-                    <h1>Get tour</h1>
-                    <h1>Packages</h1>
-                    <h1>Blog</h1>
-                    <h1>About us</h1>
-                    </div>
-                </div>
+                <NavigationBar/>
                 <div className="grid grid-cols-2">
                 <div className=" flex justify-center items-center">
                     <FindSvg/>

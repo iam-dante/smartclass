@@ -1,46 +1,30 @@
-import {SearchSvg, MessageSvg, BookingSvg, LearningSvg }from "../public/svg"
 import Link from "next/link"
+
+import {SearchSvg, MessageSvg, BookingSvg, LearningSvg }from "../public/svg"
+import NavigationBar from "../components/navigationBar"
 
 
 export default function Home(){
     let list =["Get a tutor","Become a tutor","Jobs","Courses","Instant","Register","Careers","Competition"]
-
+    
     return(
         <div>
-            <div className="h-screen bg-slate-100  mx-auto">
+            <div className="h-screen mx-auto">
 
-                <div className="relative flex justify-center items-center">
-                    <h1 className="absolute left-8 top-8 md:left-16 text-3xl">SmartClass</h1>
-                    <div className=" hidden lg:h-24  lg:flex lg:flex-row lg:items-center lg:justify-center lg:space-x-14 text-xl">
-                        <Link href="/">
-                            <a>Home</a>
-                        </Link>
-
-                        <Link href="/getTutor">
-                            <a>Get Tutor</a>
-                        </Link>
-
-                        <Link href="/">
-                            <a>Packages</a>
-                        </Link>
-
-                        <Link href="/">
-                            <a>Blog</a>
-                        </Link>
-
-                        <Link href="/">
-                            <a>About Us</a>
-                        </Link>
-                    </div>
-                </div>
+                <NavigationBar/>
 
                 <div className="grid grid-cols-1 grid-rows-2 lg:grid-cols-2">
-                <div className="pl-6 md:pl-20 space-y-8">
+                <div className="pl-6 md:pl-20 space-y-12">
                     <h1 className="mt-24 md:mt-48 text-5xl xl:text-9xl w-3 md:w-9 font-serif">Education Reimagined</h1>
-                    <p className="w-3/4 lg:w-2/4 text-1xl md:text-2xl leading-loose">Find a class for your personal enrichment or to build your profesional opportunities</p>
+                    <p className="w-3/4 lg:w-[511px] text-1xl md:text-2xl leading-loose">Find a class for your personal enrichment or to build your profesional opportunities</p>
                     <div className="space-x-8">
-                    <span className="px-6 py-4 text-sm md:text-base bg-cyanblue-300 text-white font-medium rounded-sm">Get Started</span>
-                    <span className=" px-6 py-4 text-sm  md:text-base bg-cyanblue-200 text-black font-medium rounded-sm">Be a tutor</span>
+                        <Link href="/getTutor">
+                            <a className="px-10 py-5 text-sm md:text-lg bg-cyanblue-300 text-white font-medium rounded-sm">Get Started</a>
+                        </Link>
+
+                        <Link href="/">
+                            <a className=" px-10 py-5 text-sm  md:text-lg bg-cyanblue-200 text-cyanblue-400 font-medium rounded-sm">Be a tutor</a>
+                        </Link>
                     </div>
                 </div>
 
@@ -51,18 +35,18 @@ export default function Home(){
             </div>
 
                 <div className="p-6 md:p-20 space-y-10">
-                <div className="space-y-6">
-                    <h1 className="text-xl md:text-4xl font-serif uppercase">About us</h1>
-                    <p className="text-1xl lg:text-2xl md:w-1/2">SmartClass is the leading leader in online education rendering personalized learning experiences to lots of students and business professionals in infinite subjects in Africa. SmartClass is an online platform that connects learners/students to very qualified and certified private tutors/experts both online and offline. SmartClass does this by capitalizing on big data analytics and using advanced algorithmic matching between students and tutors.</p>
-                </div>
-                <div>
-                    <h1 className="text-xl md:text-3xl  font-serif uppercase flex justify-center">Our Sponsors</h1>
-                    <div className="  flex justify-around ">
-                    <img src="/images/commonwealth.jpeg" className="grayscale hover:grayscale-0 h-48"/>
-                    <img src="/images/tonyfoundation.png" className="grayscale hover:grayscale-0"/>
-                    <img src="/images/udsm.png" className="grayscale hover:grayscale-0"/>
+                    <div className="space-y-10  flex justify-center flex-col items-center  h-80">
+                        <h1 className="text-xl md:text-3xl font-serif uppercase text-slate-500 ">About us</h1>
+                        <p className="text-xl lg:text-2xl w-[914px] flex justify-center text-center leading-loose">SmartClass is the leading leader in online education rendering personalized learning experiences to lots of students and business professionals in infinite subjects in Africa. SmartClass is an online platform that connects learners/students to very qualified and certified private tutors/experts both online and offline. SmartClass does this by capitalizing on big data analytics and using advanced algorithmic matching between students and tutors.</p>
                     </div>
-                </div>   
+                    <div>
+                        <h1 className="text-xl md:text-3xl  font-serif uppercase flex justify-center">Our Sponsors</h1>
+                        <div className="  flex justify-around ">
+                        <img src="/images/commonwealth.jpeg" className="grayscale hover:grayscale-0 h-48"/>
+                        <img src="/images/tonyfoundation.png" className="grayscale hover:grayscale-0"/>
+                        <img src="/images/udsm.png" className="grayscale hover:grayscale-0"/>
+                        </div>
+                    </div>   
                 </div>
 
                 <div className="bg-cyanblue-100 p-20 space-y-24 ">
@@ -196,7 +180,7 @@ export default function Home(){
                     <h className="text-xl font-semibold">Quick Links</h>
                     {
                     list.map((vl)=>(
-                        <h className="text-lg">{vl}</h>
+                        <h className="text-lg" key={vl}>{vl}</h>
                     ))
                     }
                 </div>
