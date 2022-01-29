@@ -1,4 +1,5 @@
 import {SearchSvg, MessageSvg, BookingSvg, LearningSvg }from "../public/svg"
+import Link from "next/link"
 
 
 export default function Home(){
@@ -6,31 +7,45 @@ export default function Home(){
 
     return(
         <div>
-            <div className="h-screen bg-slate-200  mx-auto">
+            <div className="h-screen bg-slate-100  mx-auto">
 
                 <div className="relative flex justify-center items-center">
                     <h1 className="absolute left-8 top-8 md:left-16 text-3xl">SmartClass</h1>
-                    <div className=" hidden lg:h-24  lg:flex lg:flex-row lg:items-center lg:justify-center lg:space-x-14">
-                    <h1>Home</h1>
-                    <h1>Get tour</h1>
-                    <h1>Packages</h1>
-                    <h1>Blog</h1>
-                    <h1>About us</h1>
+                    <div className=" hidden lg:h-24  lg:flex lg:flex-row lg:items-center lg:justify-center lg:space-x-14 text-xl">
+                        <Link href="/">
+                            <a>Home</a>
+                        </Link>
+
+                        <Link href="/getTutor">
+                            <a>Get Tutor</a>
+                        </Link>
+
+                        <Link href="/">
+                            <a>Packages</a>
+                        </Link>
+
+                        <Link href="/">
+                            <a>Blog</a>
+                        </Link>
+
+                        <Link href="/">
+                            <a>About Us</a>
+                        </Link>
                     </div>
                 </div>
 
                 <div className="grid grid-cols-1 grid-rows-2 lg:grid-cols-2">
-                <div className="pl-6 md:pl-20 space-y-6">
+                <div className="pl-6 md:pl-20 space-y-8">
                     <h1 className="mt-24 md:mt-48 text-5xl xl:text-9xl w-3 md:w-9 font-serif">Education Reimagined</h1>
-                    <p className="w-3/4 lg:w-2/4 text-1xl md:text-2xl">Find a class for your personal enrichment or to build your profesional opportunities</p>
+                    <p className="w-3/4 lg:w-2/4 text-1xl md:text-2xl leading-loose">Find a class for your personal enrichment or to build your profesional opportunities</p>
                     <div className="space-x-8">
-                    <span className="px-6 py-4 text-sm bg-cyanblue-300 text-white font-medium">Get Started</span>
-                    <span className=" px-6 py-4 text-sm bg-cyanblue-200 text-black font-medium">Be a tutor</span>
+                    <span className="px-6 py-4 text-sm md:text-base bg-cyanblue-300 text-white font-medium rounded-sm">Get Started</span>
+                    <span className=" px-6 py-4 text-sm  md:text-base bg-cyanblue-200 text-black font-medium rounded-sm">Be a tutor</span>
                     </div>
                 </div>
 
-                <div className="mt-28 lg:mt-24 grayscale ">
-                    <img src='./images/home.jpg' alt=""  className="h-full right-0" />
+                <div className="mt-28 lg:mt-24 ">
+                    <img src='./images/home.jpg' alt=""  className="h-full w-full right-0 grayscale" />
                 </div>
                 </div>
             </div>
@@ -41,7 +56,7 @@ export default function Home(){
                     <p className="text-1xl lg:text-2xl md:w-1/2">SmartClass is the leading leader in online education rendering personalized learning experiences to lots of students and business professionals in infinite subjects in Africa. SmartClass is an online platform that connects learners/students to very qualified and certified private tutors/experts both online and offline. SmartClass does this by capitalizing on big data analytics and using advanced algorithmic matching between students and tutors.</p>
                 </div>
                 <div>
-                    <h1 className="text-xl md:text-4xl  font-serif uppercase flex justify-center">Our Sponsors</h1>
+                    <h1 className="text-xl md:text-3xl  font-serif uppercase flex justify-center">Our Sponsors</h1>
                     <div className="  flex justify-around ">
                     <img src="/images/commonwealth.jpeg" className="grayscale hover:grayscale-0 h-48"/>
                     <img src="/images/tonyfoundation.png" className="grayscale hover:grayscale-0"/>
@@ -51,7 +66,7 @@ export default function Home(){
                 </div>
 
                 <div className="bg-cyanblue-100 p-20 space-y-24 ">
-                <h1 className="flex justify-center text-4xl font-serif uppercase">How it works</h1>
+                <h1 className="flex justify-center text-3xl font-serif uppercase">How it works</h1>
 
                 
 
@@ -124,7 +139,7 @@ export default function Home(){
                 <div className="px-20 py-20 space-y-8 "> 
                 <h1 className="text-4xl flex justify-center uppercase font-serif ">What our clients say</h1>
 
-                <div className="overflow-x-auto">
+                <div className="overflow-x-auto scrollbar scrollbar-thin">
 
                     <div className="bg-blue-500 flex flex-row space-x-11 w-fit">
                     <div className="w-[900px] rounded-xl flex justify-center items-center px-12 py-12  flex-col space-y-2 shadow-lg bg-cyanblue-300">

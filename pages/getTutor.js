@@ -1,8 +1,10 @@
 import { useState } from 'react'
 import { Listbox, Transition } from '@headlessui/react'
 
+import { FindSvg } from '../public/svg'
 
-function GerTutor(){
+
+export default function GerTutor(){
     var category = [
         {id:1, name:"Academic"},
         {id:2, name:"Business"},
