@@ -14,7 +14,7 @@ export default function Footer(){
                             <h className="text-2xl md:text-3xl  font-semibold">Love what we do?</h>
                             <h className=" text-lg md:text-xl  leading-loose">Do you appreciate what we do and would like to be part of this winning team? </h>
                             <h className="text-base">Just drop us an email and we&apos;ll get in touch with you.</h>
-                            <a href = "mailto: investor@smartclass-tz.com" className="text-blue-600"> investor@smartclass-tz.com</a>
+                            <a href = "mailto: investor@smartclass-tz.com" className="text-blue-400"> investor@smartclass-tz.com</a>
                             <span className="flex flex-row space-x-10 items-center">
                                 <InstagramIcon/>
                                 <FaceBookIcon />

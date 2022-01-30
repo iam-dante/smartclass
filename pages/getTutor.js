@@ -166,9 +166,9 @@ export default function GetTutor(){
 
             </div>
 
-            <div className="h-[300px] lg:h-[600px] w-full bg-fixed bg-cover bg-center  backdrop-blur-lg bg-no-repeat flex justify-center items-center" style={{backgroundImage: "url('/images/teaching.jpg')",}}>
+            <div className="h-[400px] lg:h-[600px] w-full bg-fixed bg-cover bg-center  backdrop-blur-lg bg-no-repeat flex justify-center items-center" style={{backgroundImage: "url('/images/teaching.jpg')",}}>
                 <div className=" flex justify-center items-center flex-col space-y-4 backdrop-blur-md backdrop-contrast-100 w-full h-full px-4 bg-black opacity-80">
-                    <h className="text-2xl lg:text-5xl font-medium text-center lg:w-[840px] text-white">Earn extra income on your free time by teaching people around you</h>
+                    <h className="text-xl lg:text-5xl font-medium text-center lg:w-[840px] text-white">Earn extra income on your free time by teaching people around you</h>
                     <span className="px-6 py-4 bg-cyan-900 text-lg rounded-md text-white font-medium">Become a tutor</span>
                 </div>
             </div>
