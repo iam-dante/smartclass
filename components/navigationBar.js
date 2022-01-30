@@ -46,13 +46,13 @@ export default function NavigationBar(){
                         <Menu.Items className=" bg-slate-100  shadow-xl absolute right-0 px-4 py-4 flex flex-col w-60 rounded-md space-y-4">
                             <Menu.Item>
                                 <Link href="/" >
-                                    <a className= {router.pathname === "/" ? "font-semibold text-blue-500 text-xl bg-blue-200 px-4 rounded": ""}>Home</a>
+                                    <a className= {router.pathname === "/" ? "font-semibold text-blue-400 text-lg bg-blue-200 px-4 rounded": ""}>Home</a>
                                 </Link>
                             </Menu.Item>
 
                             <Menu.Item>
                                 <Link href="/getTutor">
-                                    <a className= {router.pathname === "/getTutor" ? "font-semibold text-blue-500 text-xl bg-blue-200 px-4 rounded": ""}>Get Tutor</a>
+                                    <a className= {router.pathname === "/getTutor" ? "font-semibold text-blue-400 text-lg bg-blue-200 px-4 rounded": ""}>Get Tutor</a>
                                 </Link>
                             </Menu.Item>
 
@@ -64,7 +64,7 @@ export default function NavigationBar(){
 
                             <Menu.Item>
                             <Link href="/blog">
-                                <a className= {router.pathname === "/blog" ? "font-semibold text-blue-500 text-xl bg-blue-200 px-4 rounded": ""}>Blog</a>
+                                <a className= {router.pathname === "/blog" ? "font-semibold text-blue-400 text-lg bg-blue-200 px-4 rounded": ""}>Blog</a>
                             </Link>
                             </Menu.Item>
 

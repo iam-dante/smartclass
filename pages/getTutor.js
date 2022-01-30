@@ -6,7 +6,7 @@ import NavigationBar from '../components/navigationBar'
 import Footer from '../components/Footer'
 
 
-export default function GerTutor(){
+export default function GetTutor(){
     var category = [
         {id:1, name:"Academic"},
         {id:2, name:"Business"},
@@ -37,14 +37,14 @@ export default function GerTutor(){
         
     return(
         <div>
-            <div className="h-screen ">
+            <div className="h-screen bg-cyanblue-100">
                 <NavigationBar/>
-                <div className="grid grid-cols-2">
-                <div className=" flex justify-center items-center">
+                <div className="grid lg:grid-cols-2 grid-row-1 lg:grid-row-none">
+                <div className="hidden lg:flex justify-center items-center ">
                     <FindSvg/>
                 </div>
-                <div className="pt-12">
-                    <div className=" w-[500px] rounded-xl drop-shadow bg-[#F8F8F8] px-12 py-12">
+                <div className="pt-12 px-4 md:px-12 ">
+                    <div className="lg:w-[500px] rounded-xl drop-shadow bg-[#F8F8F8] md:px-12 md:py-12 px-5 py-6">
 
                 <div className=" relative flex flex-col space-y-4 ">
                     <Listbox value={statecategory} onChange={setCategory}>
@@ -166,15 +166,10 @@ export default function GerTutor(){
 
             </div>
 
-            {/* <div className="h-[500px]  flex justify-center items-center flex-col space-y-4 bg-cyanblue-200">
-                <h className="text-5xl font-medium text-center w-[840px]">Earn extra income on your free time by teaching people around you</h>
-                <span className="px-6 py-4 bg-cyanblue-300 text-lg rounded-md text-cyan-600">Become a tutor</span>
-            </div> */}
-
-            <div className="h-[600px] w-full bg-fixed bg-cover bg-center  backdrop-blur-lg bg-no-repeat flex justify-center items-center " style={{backgroundImage: "url('/images/teaching.jpg')"}}>
-                <div className=" flex justify-center items-center flex-col space-y-4 backdrop-blur-md backdrop-contrast-75 w-full h-full">
-                    <h className="text-5xl font-medium text-center w-[840px] text-white ">Earn extra income on your free time by teaching people around you</h>
-                    <span className="px-6 py-4 bg-cyanblue-100 text-lg rounded-md text-cyan-600">Become a tutor</span>
+            <div className="h-[300px] lg:h-[600px] w-full bg-fixed bg-cover bg-center  backdrop-blur-lg bg-no-repeat flex justify-center items-center" style={{backgroundImage: "url('/images/teaching.jpg')",}}>
+                <div className=" flex justify-center items-center flex-col space-y-4 backdrop-blur-md backdrop-contrast-100 w-full h-full px-4 bg-black opacity-80">
+                    <h className="text-2xl lg:text-5xl font-medium text-center lg:w-[840px] text-white">Earn extra income on your free time by teaching people around you</h>
+                    <span className="px-6 py-4 bg-cyan-900 text-lg rounded-md text-white font-medium">Become a tutor</span>
                 </div>
             </div>
             <Footer/>

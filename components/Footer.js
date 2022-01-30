@@ -6,7 +6,7 @@ export default function Footer(){
     return(
         <div>
             <div className="grid md:grid-cols-3 grid-rows-3 md:grid-rows-none md:pt-20 py-5 md:pl-10 px-6 gap-7">
-                        <div className="flex flex-col space-y-4">
+                        <div className="flex flex-col space-y-7">
                         <span className=" text-4xl ">
                             <h className="">Smart</h>
                             <h className="font-serif text-cyanblue-300">Class</h>
@@ -32,7 +32,7 @@ export default function Footer(){
                     </div>
                     <div className="flex flex-col  space-y-4">
                         <h className="text-xl font-semibold">Contact</h>
-                        <p className="w-56 text-lg leading-loose">Physical location
+                        <p className="w-56 text-lg leading-10">Physical location
                             University of Dar es Salaam.
                             UDBS Building, UDIEC Block,
                             Ground Floor, Room B213.

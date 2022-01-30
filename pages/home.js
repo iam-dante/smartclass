@@ -136,7 +136,7 @@ export default function Home(){
                     </div>
 
 
-                    <div className="px-4 bg-white py-6 rounded-xl drop-shadow-2xl">
+                    <div className="px-4 bg-white py-6 rounded-md drop-shadow-2xl">
                         <div className="space-y-4">
                         <div className="flex flex-row items-center space-x-4">
                             <span className="px-4 py-4 bg-cyanblue-200 text-lg font-semibold">2</span>
@@ -156,7 +156,7 @@ export default function Home(){
                     </div>
 
 
-                    <div className="px-4 bg-white py-6 rounded-xl drop-shadow-2xl">
+                    <div className="px-4 bg-white py-6 rounded-md drop-shadow-2xl">
                         <div className="space-y-4">
                         <div className="flex flex-row items-center space-x-4">
                             <span className="px-4 py-4 bg-cyanblue-200 text-lg font-semibold">4</span>
@@ -224,11 +224,11 @@ export default function Home(){
 
                 <div className="w-full">
                     <div className="h-[600px] w-full bg-fixed bg-cover bg-center  backdrop-blur-lg bg-no-repeat " style={{backgroundImage: "url('/images/news.jpeg')"}}>
-                        <div className="backdrop-blur-sm flex justify-center items-center flex-col h-full  space-y-6 px-6">
+                        <div className="backdrop-blur-sm flex justify-center items-center flex-col h-full  space-y-6 px-6 bg-black opacity-70">
 
                             <h className="text-4xl text-white">Stay Updated</h>
                             <h className="text-white  text-xl md:text-2xl font-semibold text-center">Get all the news, articles, promotions and many more straight into your inbox</h>
-                            <input className="h-12 md:w-96 px-6 rounded-md" placeholder="Enter your email address"/>
+                            <input className="h-12 md:w-96 px-6 rounded-md outline-none focus:outline-cyanblue-300" placeholder="Enter your email address"/>
                             <span className="bg-cyanblue-400 text-white px-12 py-4 rounded-md">Subscribe</span>
                         </div>
                     </div>
