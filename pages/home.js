@@ -40,17 +40,17 @@ export default function Home(){
                         <h1 className="text-xl md:text-3xl font-serif uppercase text-[#8E8B8B] ">About us</h1>
                         <p className="text-base lg:text-2xl lg:w-[914px]  text-center leading-loose">SmartClass is the leading leader in online education rendering personalized learning experiences to lots of students and business professionals in infinite subjects in Africa. SmartClass is an online platform that connects learners/students to very qualified and certified private tutors/experts both online and offline. SmartClass does this by capitalizing on big data analytics and using advanced algorithmic matching between students and tutors.</p>
                     </div>
-                    {/* <div>
+                    <div className="px-20 space-y-8">
                         <h1 className="text-xl md:text-3xl  font-serif uppercase flex justify-center text-[#8E8B8B]">Our Sponsors</h1>
-                        <div className="  flex justify-around ">
-                        <img src="/images/commonwealth.jpeg" className="grayscale hover:grayscale-0 h-48"/>
-                        <img src="/images/tonyfoundation.png" className="grayscale hover:grayscale-0"/>
-                        <img src="/images/udsm.png" className="grayscale hover:grayscale-0"/>
+                        <div className="flex justify-around space-x-8">
+                            <img src="/images/commonwealth.jpeg" className=" h-14 grayscale hover:grayscale-0 lg:h-48"/>
+                            <img src="/images/tonyfoundation.png" className=" h-14 grayscale hover:grayscale-0 lg:h-48"/>
+                            <img src="/images/udsm.png" className=" h-16 grayscale hover:grayscale-0 lg:h-48"/>
                         </div>
-                    </div>    */}
+                    </div>   
                 </div>
 
-                {/* <div className="bg-cyanblue-100 p-20 space-y-24 ">
+                <div className="hidden lg:block bg-cyanblue-100 p-20 space-y-24 ">
                 <h1 className="flex justify-center text-3xl font-serif uppercase text-[#8E8B8B]">How it works</h1>
 
                 
@@ -121,8 +121,54 @@ export default function Home(){
                 </div>
                 </div>
 
-                <div className="px-20 py-20 space-y-8 "> 
-                <h1 className="text-3xl flex justify-center uppercase font-serif  text-[#8E8B8B]">What our clients say</h1>
+
+
+{/* Moblile */}
+                <div className="lg:hidden bg-cyanblue-100 px-6 md:px-14 py-6 space-y-6">
+                    <h1 className="flex justify-center text-2xl font-serif uppercase text-[#8E8B8B]">How it works</h1>
+
+                    <div className="space-y-5">
+                        <div className="flex flex-row items-center  space-x-3">
+                            <span className="px-4 py-4 bg-cyanblue-300 text-xl text-white font-semibold">1</span>
+                            <h1 className="text-xl font-bold">It all begins with a search</h1>
+                        </div>
+                        <p className="text-base leading-loose">Simply enter your subject, level, teaching type and your location to view a tailored list of the best tutors in your area. Each tutor has a full profile, which is vetted before they are set live on the site, so you can confidently select the right tutor for you! If the initial tutor can&apos;t help, we will help you to find an alternative tutor who meets all of your needs.</p>
+                    </div>
+
+
+                    <div className="px-4 bg-white py-6 rounded-xl drop-shadow-2xl">
+                        <div className="space-y-4">
+                        <div className="flex flex-row items-center space-x-4">
+                            <span className="px-4 py-4 bg-cyanblue-200 text-lg font-semibold">2</span>
+                            <h1 className="text-xl font-bold">Send a Message to your tutor</h1>
+                        </div>
+                        <p className=" text-base leading-loose">After selecting your tutor, you can message them for free. Our messaging system means that you can chat with tutor through SmartClass. Agree with the tutor, when and where the session should take place.</p>
+                        </div>
+                    </div>
+
+
+                    <div className="space-y-5">
+                        <div className="flex flex-row items-center  space-x-3">
+                            <span className="px-4 py-4 bg-cyanblue-300 text-xl text-white font-semibold">3</span>
+                            <h1 className="text-xl font-bold">Session Booking and Payment</h1>
+                        </div>
+                        <p className="text-base leading-loose">Once you are happy with your tutor, a tutor will book the lesson for you and you will be asked to confirm the schedule by depositing the amount indicated in your invoice. Booking your private tutor is very easy in SmartClass, try it and see.</p>
+                    </div>
+
+
+                    <div className="px-4 bg-white py-6 rounded-xl drop-shadow-2xl">
+                        <div className="space-y-4">
+                        <div className="flex flex-row items-center space-x-4">
+                            <span className="px-4 py-4 bg-cyanblue-200 text-lg font-semibold">4</span>
+                            <h1 className="text-xl font-bold">Start learning and Rate your tutor</h1>
+                        </div>
+                        <p className=" text-base leading-loose">Upon confirming the schedule, your tutor will prepare an individualized learning plan to help you reach your goals. Every lesson will be tailored to your needs. Research demonstrates that, a one-to-one tuition leads to an additional five months&apos; progress</p>
+                        </div>
+                </div>
+            </div>
+
+                {/* <div className="px-20 py-20 space-y-8 "> 
+                    <h1 className="text-3xl flex justify-center uppercase font-serif  text-[#8E8B8B]">What our clients say</h1>
 
                 <div className="overflow-x-auto scrollbar scrollbar-thin scrollbar-thumb-cyanblue-400 py-6 snap-x snap-mandatory">
 

@@ -12,6 +12,8 @@ export default function App() {
       <Script src="//code.tidio.co/3a74dxsf2ock0q9wm1vp3lzizh9rwnpr.js" async/>
       <Home/>
       {/* <NavigationBar/> */}
+
+    
     </>
   )
 }
