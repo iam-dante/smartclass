@@ -10,47 +10,47 @@ export default function Home(){
     
     return(
         <div>
-            <div className="h-screen mx-auto bg-slate-100">
+            <div className="mx-auto bg-slate-100">
 
                 <NavigationBar/>
 
-                <div className="grid grid-cols-1 grid-rows-2 lg:grid-cols-2 ">
-                <div className="pl-6 md:pl-20 space-y-12">
-                        <h1 className="mt-24 md:mt-48 text-5xl xl:text-9xl w-3 md:w-9 font-serif">Education Reimagined</h1>
-                        <p className="w-3/4 lg:w-[511px] text-1xl md:text-2xl leading-loose">Find a class for your personal enrichment or to build your profesional opportunities</p>
-                    <div className="space-x-8">
-                        <Link href="/getTutor">
-                            <a className="px-10 py-5 text-sm md:text-lg bg-cyanblue-300 text-white font-medium rounded-sm">Get Started</a>
-                        </Link>
+                <div className="grid grid-rows- lg:grid-cols-2">
+                    <div className="pl-6 md:pl-20 space-y-6 md:space-y-12 py-12 z-40">
+                            <h1 className="mt-6  text-5xl xl:text-9xl w-3 md:w-9 font-serif">Education Reimagined</h1>
+                            <p className="w-[300px] lg:w-[511px] text-1xl md:text-2xl leading-loose">Find a class for your personal enrichment or to build your profesional opportunities</p>
+                        <div className="space-x-8">
+                            <Link href="/getTutor">
+                                <a className="px-5 py-5 lg:px-10 lg:py-5 text-sm md:text-lg bg-cyanblue-300 text-white font-medium rounded-sm">Get Started</a>
+                            </Link>
 
-                        <Link href="/">
-                            <a className=" px-10 py-5 text-sm  md:text-lg bg-cyanblue-200 text-cyanblue-400 font-medium rounded-sm">Be a tutor</a>
-                        </Link>
+                            <Link href="/">
+                                <a className="px-5 py-5 lg:px-10 lg:py-5 text-sm  md:text-lg bg-cyanblue-200 text-cyanblue-400 font-medium rounded-sm">Be a tutor</a>
+                            </Link>
+                        </div>
                     </div>
-                </div>
 
-                <div className="mt-28 lg:mt-24 ">
-                    <img src='./images/home.jpg' alt=""  className="h-full w-full right-0 grayscale" />
-                </div>
+                    <div className="flex justify-end lg:mt-24">
+                        <img src='./images/home.jpg' alt=""  className="lg:h-[700px] right-0 grayscale" />
+                    </div>
                 </div>
             </div>
 
                 <div className="p-6 md:p-20 space-y-10">
-                    <div className="space-y-10  flex justify-center flex-col items-center  h-80">
+                    <div className="lg:space-y-10 flex justify-center flex-col items-center">
                         <h1 className="text-xl md:text-3xl font-serif uppercase text-[#8E8B8B] ">About us</h1>
-                        <p className="text-xl lg:text-2xl w-[914px] flex justify-center text-center leading-loose">SmartClass is the leading leader in online education rendering personalized learning experiences to lots of students and business professionals in infinite subjects in Africa. SmartClass is an online platform that connects learners/students to very qualified and certified private tutors/experts both online and offline. SmartClass does this by capitalizing on big data analytics and using advanced algorithmic matching between students and tutors.</p>
+                        <p className="text-base lg:text-2xl lg:w-[914px]  text-center leading-loose">SmartClass is the leading leader in online education rendering personalized learning experiences to lots of students and business professionals in infinite subjects in Africa. SmartClass is an online platform that connects learners/students to very qualified and certified private tutors/experts both online and offline. SmartClass does this by capitalizing on big data analytics and using advanced algorithmic matching between students and tutors.</p>
                     </div>
-                    <div>
+                    {/* <div>
                         <h1 className="text-xl md:text-3xl  font-serif uppercase flex justify-center text-[#8E8B8B]">Our Sponsors</h1>
                         <div className="  flex justify-around ">
                         <img src="/images/commonwealth.jpeg" className="grayscale hover:grayscale-0 h-48"/>
                         <img src="/images/tonyfoundation.png" className="grayscale hover:grayscale-0"/>
                         <img src="/images/udsm.png" className="grayscale hover:grayscale-0"/>
                         </div>
-                    </div>   
+                    </div>    */}
                 </div>
 
-                <div className="bg-cyanblue-100 p-20 space-y-24 ">
+                {/* <div className="bg-cyanblue-100 p-20 space-y-24 ">
                 <h1 className="flex justify-center text-3xl font-serif uppercase text-[#8E8B8B]">How it works</h1>
 
                 
@@ -171,24 +171,23 @@ export default function Home(){
                     
                     </div>
                 </div>
-                </div>
+                </div> */}
 
-                <div className=" w-full">
-                {/* <img  className="h-3/4 w-full bg-cover bg-center opacity-70 bg-no-repeat" style={{backgroundImage: "url('/images/news.jpeg')"}}/> */}
-                <div className="h-[600px] w-full bg-fixed bg-cover bg-center  backdrop-blur-lg bg-no-repeat " style={{backgroundImage: "url('/images/news.jpeg')"}}>
-                    <div className="backdrop-blur-sm flex justify-center items-center flex-col h-full  space-y-6 c">
+                {/* <div className=" w-full">
+                    <div className="h-[600px] w-full bg-fixed bg-cover bg-center  backdrop-blur-lg bg-no-repeat " style={{backgroundImage: "url('/images/news.jpeg')"}}>
+                        <div className="backdrop-blur-sm flex justify-center items-center flex-col h-full  space-y-6 c">
 
-                        <h className="text-4xl text-white">Stay Updated</h>
-                        <h className="text-white text-2xl font-semibold">Get all the news, articles, promotions and many more straight into your inbox</h>
-                        <input className="h-12 w-96 px-6 rounded-md" placeholder="Enter your email address"/>
-                        <span className="bg-cyanblue-400 text-white px-12 py-4 rounded-md">Subscribe</span>
+                            <h className="text-4xl text-white">Stay Updated</h>
+                            <h className="text-white text-2xl font-semibold">Get all the news, articles, promotions and many more straight into your inbox</h>
+                            <input className="h-12 w-96 px-6 rounded-md" placeholder="Enter your email address"/>
+                            <span className="bg-cyanblue-400 text-white px-12 py-4 rounded-md">Subscribe</span>
+                        </div>
                     </div>
-                </div>
-                </div>
+                </div> */}
 
 
 
-                <Footer/>
+                {/* <Footer/> */}
         </div>
 )
 }
