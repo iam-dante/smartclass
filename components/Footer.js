@@ -42,7 +42,7 @@ export default function Footer(){
                     </div>
                 </div>
 
-                    <div className="border-t-2 border-b-gray-900 h-24 flex justify-center items-center text-slate-500 md:mx-20 mx-5 text-center text-base md:text-xl">
+                    <div className="border-t-2 border-b-gray-900 h-24 flex justify-center items-center text-slate-500 md:mx-20 mx-5 text-center text-sm md:text-xl">
                         <h>SmartClass is a product of  SmartClass LLC. © Copyright 2022. All rights reserved.</h>
                     </div>
         </div>
