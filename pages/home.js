@@ -167,8 +167,11 @@ export default function Home(){
                 </div>
             </div>
 
-                {/* <div className="px-20 py-20 space-y-8 "> 
-                    <h1 className="text-3xl flex justify-center uppercase font-serif  text-[#8E8B8B]">What our clients say</h1>
+
+
+
+                <div className="px-6 md:px-20 py-20 space-y-4 lg:space-y-8"> 
+                    <h1 className=" text-xl lg:text-3xl flex justify-center uppercase font-serif  text-[#8E8B8B]">What our clients say</h1>
 
                 <div className="overflow-x-auto scrollbar scrollbar-thin scrollbar-thumb-cyanblue-400 py-6 snap-x snap-mandatory">
 
@@ -217,23 +220,23 @@ export default function Home(){
                     
                     </div>
                 </div>
-                </div> */}
+                </div>
 
-                {/* <div className=" w-full">
+                <div className="w-full">
                     <div className="h-[600px] w-full bg-fixed bg-cover bg-center  backdrop-blur-lg bg-no-repeat " style={{backgroundImage: "url('/images/news.jpeg')"}}>
-                        <div className="backdrop-blur-sm flex justify-center items-center flex-col h-full  space-y-6 c">
+                        <div className="backdrop-blur-sm flex justify-center items-center flex-col h-full  space-y-6 px-6">
 
                             <h className="text-4xl text-white">Stay Updated</h>
-                            <h className="text-white text-2xl font-semibold">Get all the news, articles, promotions and many more straight into your inbox</h>
-                            <input className="h-12 w-96 px-6 rounded-md" placeholder="Enter your email address"/>
+                            <h className="text-white  text-xl md:text-2xl font-semibold text-center">Get all the news, articles, promotions and many more straight into your inbox</h>
+                            <input className="h-12 md:w-96 px-6 rounded-md" placeholder="Enter your email address"/>
                             <span className="bg-cyanblue-400 text-white px-12 py-4 rounded-md">Subscribe</span>
                         </div>
                     </div>
-                </div> */}
+                </div>
 
 
 
-                {/* <Footer/> */}
+                <Footer/>
         </div>
 )
 }

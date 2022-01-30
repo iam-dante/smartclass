@@ -5,6 +5,7 @@ import Script from 'next/script'
 
 import Home from "./home"
 import NavigationBar from '../components/navigationBar'
+import Footer from '../components/Footer'
 
 export default function App() {
   return (
@@ -12,6 +13,7 @@ export default function App() {
       <Script src="//code.tidio.co/3a74dxsf2ock0q9wm1vp3lzizh9rwnpr.js" async/>
       <Home/>
       {/* <NavigationBar/> */}
+      {/* <Footer/> */}
 
     
     </>
