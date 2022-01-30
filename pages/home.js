@@ -15,7 +15,7 @@ export default function Home(){
                 <NavigationBar/>
 
                 <div className="grid grid-rows- lg:grid-cols-2">
-                    <div className="pl-6 md:pl-20 space-y-6 md:space-y-12 py-12 z-40">
+                    <div className="pl-6 md:pl-20 space-y-6 md:space-y-12 py-12 z-20">
                             <h1 className="mt-6  text-5xl xl:text-9xl w-3 md:w-9 font-serif">Education Reimagined</h1>
                             <p className="w-[300px] lg:w-[511px] text-1xl md:text-2xl leading-loose">Find a class for your personal enrichment or to build your profesional opportunities</p>
                         <div className="space-x-8">
@@ -42,9 +42,9 @@ export default function Home(){
                     </div>
                     <div className="px-20 space-y-8">
                         <h1 className="text-xl md:text-3xl  font-serif uppercase flex justify-center text-[#8E8B8B]">Our Sponsors</h1>
-                        <div className="flex justify-around space-x-8">
-                            <img src="/images/commonwealth.jpeg" className=" h-14 grayscale hover:grayscale-0 lg:h-48"/>
-                            <img src="/images/tonyfoundation.png" className=" h-14 grayscale hover:grayscale-0 lg:h-48"/>
+                        <div className="flex justify-around space-x-3">
+                            <img src="/images/commonwealth.jpeg" className=" h-16 grayscale hover:grayscale-0 lg:h-48"/>
+                            <img src="/images/tonyfoundation.png" className=" h-16 grayscale hover:grayscale-0 lg:h-48"/>
                             <img src="/images/udsm.png" className=" h-16 grayscale hover:grayscale-0 lg:h-48"/>
                         </div>
                     </div>   
