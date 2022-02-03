@@ -226,35 +226,35 @@ export default function Home(){
 
                         <div className="lg:hidden overflow-x-auto scrollbar scrollbar-thin scrollbar-thumb-cyanblue-400 py-6 snap-x snap-mandatory">
                             <div className="flex flex-row space-x-6 w-fit">
-                                <div className="w-80 bg-gray-700">
-                                    <img  src="/images/MissBrooke.png"  className=" w-grayscale hover:grayscale-0"/>
-                                    <div className="px-2 py-4">
-                                        <h className="text-base text-white"> I had an incredible experience with my tutor as well as SmartClass. The tutor was well prepared, she comes on time and my performance eventually increased for the first time ever for the subject that I considered hard for me. I benefited a lot from a very personalized and tailored one-one classes from SmartClass. I hope you continue to touch the lives of many students through the amazing service you provide.</h>
+                                <div className="w-80 bg-slate-500 rounded-lg">
+                                    <img  src="/images/MissBrooke.png"  className=" w-grayscale hover:grayscale-0 rounded-lg grayscale"/>
+                                    <div className="px-4 py-4">
+                                        <h className="text-base text-white "> I had an incredible experience with my tutor as well as SmartClass. The tutor was well prepared, she comes on time and my performance eventually increased for the first time ever for the subject that I considered hard for me. I benefited a lot from a very personalized and tailored one-one classes from SmartClass. I hope you continue to touch the lives of many students through the amazing service you provide.</h>
                                         <div className="flex flex-col">
-                                                <h className="text-lg font-semibold text-cyanblue-300">Miss Maria Munena</h>
-                                                <h className="text-cyanblue-300 text-lg">Student</h>
+                                                <h className="text-lg font-medium ">Miss Maria Munena</h>
+                                                <h className="text-blue-300 text-lg">Student</h>
                                             </div>
                                     </div>
                                 </div>
 
-                                <div className="w-80 bg-gray-700">
-                                    <img  src="/images/MissMunena.png"  className=" w-grayscale hover:grayscale-0"/>
+                                <div className="w-80 bg-slate-500 rounded-lg">
+                                    <img  src="/images/MissMunena.png"  className="grayscale rounded-lg"/>
                                     <div className="px-2 py-4">
                                         <h className="text-base text-white"> I really love math. I love teaching math. In the past, I had no way that I could teach math to students until when I heard about the awesome SmartClass platform. I was so convinced from the start about how impactful can SmartClass be because of the power of personalised learning advantages. Now, despite being a student at the University of Dar-es-Salaam, I am able to help lots of students in math while at the same time growing my income. I am so thrilled that at least I can share my math skills with lots of other people. In one world I would say SmartClass is AWESOME!!</h>
                                         <div className="flex flex-col">
-                                                <h className="text-lg font-semibold text-cyanblue-300">Miss Maria Munena</h>
-                                                <h className="text-cyanblue-300 text-lg">Tutor</h>
+                                                <h className="text-lg font-medium">Miss Maria Munena</h>
+                                                <h className="text-blue-300 text-lg">Tutor</h>
                                             </div>
                                     </div>
                                 </div>
 
-                                <div className="w-80 bg-gray-700">
-                                    <img  src="/images/KerstinJoseph.png"  className=" w-grayscale hover:grayscale-0"/>
+                                <div className="w-80 bg-slate-500 rounded-lg">
+                                    <img  src="/images/KerstinJoseph.png"  className="grayscale rounded-lg"/>
                                     <div className="px-2 py-4">
                                         <h className="text-base text-white">I am third year student at the University of Dar-es-Salaam, pursuing Bachelor of Science in Molecular Biology and Biotechnology. In, my extra time I teach biology to secondary students in nearby location. This is only possible because of awesome SmartClass platform which gives me opportunity to connect with hundreds of students. Through SmartClass I have been able to substantially grow my income and at the same time helping students succeed in their studies.</h>
                                         <div className="flex flex-col">
-                                                <h className="text-lg font-semibold text-cyanblue-300">Kerstin Joseph</h>
-                                                <h className="text-cyanblue-300 text-lg">Tutor</h>
+                                                <h className="text-lg font-medium">Kerstin Joseph</h>
+                                                <h className="text-blue-300 text-lg">Tutor</h>
                                             </div>
                                     </div>
                                 </div>
