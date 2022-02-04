@@ -15,7 +15,7 @@ export default function Home(){
                 <NavigationBar/>
 
                 <div className="grid grid-rows- lg:grid-cols-2">
-                    <div className="pl-6 md:pl-20 space-y-6 md:space-y-12 py-12 z-20">
+                    <div className="pl-6 md:pl-20 space-y-6 md:space-y-12 py-12 z-20 lg:mt-24">
                             <h1 className="mt-6  text-5xl xl:text-9xl w-3 md:w-9 font-serif">Education Reimagined</h1>
                             <p className="w-[300px] lg:w-[511px] text-1xl md:text-2xl leading-loose">Find a class for your personal enrichment or to build your profesional opportunities</p>
                         <div className="space-x-8">
@@ -37,11 +37,11 @@ export default function Home(){
 
                 <div className="p-6 md:p-20 space-y-10">
                     <div className="lg:space-y-10 flex justify-center flex-col items-center">
-                        <h1 className="text-xl md:text-3xl font-serif uppercase text-[#8E8B8B] ">About us</h1>
+                        <h1 className="text-xl md:text-3xl font-serif uppercase text-slate-800">About us</h1>
                         <p className="text-base lg:text-2xl lg:w-[914px]  text-center leading-loose">SmartClass is the leading leader in online education rendering personalized learning experiences to lots of students and business professionals in infinite subjects in Africa. SmartClass is an online platform that connects learners/students to very qualified and certified private tutors/experts both online and offline. SmartClass does this by capitalizing on big data analytics and using advanced algorithmic matching between students and tutors.</p>
                     </div>
-                    <div className="px-20 space-y-8">
-                        <h1 className="text-xl md:text-3xl  font-serif uppercase flex justify-center text-[#8E8B8B]">Our Sponsors</h1>
+                    <div className="px-20">
+                        <h1 className="text-xl md:text-3xl  font-serif uppercase flex justify-center text-slate-800">Our Sponsors</h1>
                         <div className="flex justify-around space-x-3">
                             <img src="/images/commonwealth.jpeg" className=" h-16 grayscale hover:grayscale-0 lg:h-48"/>
                             <img src="/images/tonyfoundation.png" className=" h-16 grayscale hover:grayscale-0 lg:h-48"/>
@@ -50,8 +50,8 @@ export default function Home(){
                     </div>   
                 </div>
 
-                <div className="hidden lg:block bg-cyanblue-100 p-20 space-y-24 ">
-                <h1 className="flex justify-center text-3xl font-serif uppercase text-[#8E8B8B]">How it works</h1>
+                <div className="hidden xl:block bg-cyanblue-100 p-20 space-y-24 ">
+                <h1 className="flex justify-center text-3xl font-serif uppercase text-slate-800">How it works</h1>
 
                 
 
@@ -124,8 +124,8 @@ export default function Home(){
 
 
 {/* Moblile */}
-                <div className="lg:hidden bg-cyanblue-100 px-6 md:px-14 py-6 space-y-6">
-                    <h1 className="flex justify-center text-2xl font-serif uppercase text-[#8E8B8B]">How it works</h1>
+                <div className="xl:hidden bg-cyanblue-100 px-6 md:px-14 py-6 space-y-6">
+                    <h1 className="flex justify-center text-2xl font-serif uppercase text-slate-800">How it works</h1>
 
                     <div className="space-y-5">
                         <div className="flex flex-row items-center  space-x-3">
@@ -156,7 +156,8 @@ export default function Home(){
                     </div>
 
 
-                    <div className="px-4 bg-white py-6 rounded-md drop-shadow-2xl">
+                    <div className="px-4 bg-white py-6 round    <a>Terms</a>
+                            <a>Privacy Policy</a>ed-md drop-shadow-2xl">
                         <div className="space-y-4">
                         <div className="flex flex-row items-center space-x-4">
                             <span className="px-4 py-4 bg-cyanblue-200 text-lg font-semibold">4</span>
@@ -171,7 +172,7 @@ export default function Home(){
 
 
                 <div className="px-6 md:px-20 py-20 space-y-4 lg:space-y-8"> 
-                    <h1 className=" text-xl lg:text-3xl flex justify-center uppercase font-serif  text-[#8E8B8B]">What our clients say</h1>
+                    <h1 className="text-lg lg:text-3xl flex justify-center uppercase font-serif  text-slate-800">What our clients say</h1>
 
                         <div className="lg:block hidden overflow-x-auto scrollbar scrollbar-thin scrollbar-thumb-cyanblue-400 py-6 snap-x snap-mandatory">
 
