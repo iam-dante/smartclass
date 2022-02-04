@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
 import Link from "next/link";
 import { Menu } from '@headlessui/react'
-import { MenuIcon } from "../public/svg";
+import { MenuIcon } from "./svg";
 import React, { Component } from "react";
 
 

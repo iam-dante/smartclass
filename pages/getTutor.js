@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Listbox, Transition } from '@headlessui/react'
 
-import { FindSvg } from '../public/svg'
+import { FindSvg } from '../components/svg'
 import NavigationBar from '../components/navigationBar'
 import Footer from '../components/Footer'
 

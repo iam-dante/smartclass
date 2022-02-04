@@ -2,7 +2,7 @@ import Link from "next/link"
 import Footer from "../components/Footer"
 
 import NavigationBar from "../components/navigationBar"
-import { PhoneIcon, EmailIcon, EmailSendIcon, FaceBookIcon, TwitterIcon, InstagramIcon, LinkIcon } from "../public/svg"
+import { PhoneIcon, EmailIcon, EmailSendIcon, FaceBookIcon, TwitterIcon, InstagramIcon, LinkIcon } from "../components/svg"
 
 
 export default  function Blog(){
@@ -14,14 +14,7 @@ export default  function Blog(){
 
                 <div className="grid md:grid-cols-8 grid-flow-row md:grid-rows-none ">
                     <div className="md:col-span-2  flex flex-col px-2 space-y-4  py-4">
-                        {/* <div className="grid grid-rows-3">
-                            <div className="bg-yellow-200 "></div>
-                            <div className="bg-purple-200 "></div>
-                            <div className="bg-red-200"></div>
-
-                        </div> */}
                         
-                            {/* <div className="bg-gray-200 h-[402px] w-[401px] rounded-xl"></div> */}
 
                             <iframe  className=" h-[300px] xl:h-[402px] md:w-[401px] rounded-lg" src="https://www.youtube.com/embed/1rtd9EIYO5w" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                             <div className="md:w-[404px]  h-[170px] md:h-[228px] border-t-2 border-b-2 border-black flex justify-center items-center">
@@ -81,7 +74,9 @@ export default  function Blog(){
 
                 </div>
         </div>
-        <Footer/>
+        <div className="bg-cyanblue-100">
+            <Footer/>
+        </div>
         </div>
     )
 }

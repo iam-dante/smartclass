@@ -1,7 +1,7 @@
 import Link from "next/link"
 import Image from "next/image"
 
-import {SearchSvg, MessageSvg, BookingSvg, LearningSvg }from "../public/svg"
+import {SearchSvg, MessageSvg, BookingSvg, LearningSvg }from "../components/svg"
 import NavigationBar from "../components/navigationBar"
 import Footer from "../components/Footer"
 
@@ -273,8 +273,6 @@ export default function Home(){
                         </div>
                     </div>
                 </div>
-
-
 
                 <Footer/>
         </div>
