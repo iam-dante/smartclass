@@ -30,7 +30,7 @@ export default function Footer(){
                                         <YoutubeIcon/>
                                     </a>
 
-                                    <a href="https://www.linkedin.com/company/smartclasstz" target="_blank" rel="noreferrer">
+                                    <a href="https://twitter.com/smartclasstz" target="_blank" rel="noreferrer">
                                         <TwitterIcon className="text-blue-500"/>
                                     </a>
 
