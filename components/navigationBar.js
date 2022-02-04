@@ -10,7 +10,7 @@ import React, { Component } from "react";
 export default function NavigationBar(){
     const router = useRouter()
     return(
-        <div className=" relative flex flex-row justify-center items-center py-8 lg:py-2 px-8">
+        <div className=" relative flex flex-row justify-center items-center py-8 lg:py-2 px-8 ">
             <span className=" absolute left-8 text-2xl md:text-4xl place-self-center ">
                 <h className="">Smart</h>
                 <h className="font-serif text-cyanblue-300">Class</h>
@@ -43,16 +43,16 @@ export default function NavigationBar(){
                     <Menu.Button>
                         <MenuIcon/>
                     </Menu.Button>
-                        <Menu.Items className=" bg-slate-100  shadow-xl absolute right-0 px-4 py-4 flex flex-col w-60 rounded-md space-y-4">
+                        <Menu.Items className=" bg-slate-100  shadow-xl absolute right-0 px-4 py-4 flex flex-col w-80 rounded-md space-y-4 ">
                             <Menu.Item>
                                 <Link href="/" >
-                                    <a className= {router.pathname === "/" ? "font-semibold text-blue-400 text-lg bg-blue-200 px-4 rounded": ""}>Home</a>
+                                    <a className= {router.pathname === "/" ? "font-semibold text-cyan-700 text-lg bg-blue-100 px-4 rounded": ""}>Home</a>
                                 </Link>
                             </Menu.Item>
 
                             <Menu.Item>
                                 <Link href="/getTutor">
-                                    <a className= {router.pathname === "/getTutor" ? "font-semibold text-blue-400 text-lg bg-blue-200 px-4 rounded": ""}>Get Tutor</a>
+                                    <a className= {router.pathname === "/getTutor" ? "font-semibold text-cyan-700 text-lg bg-blue-100 px-4 rounded": ""}>Get Tutor</a>
                                 </Link>
                             </Menu.Item>
 
@@ -64,7 +64,7 @@ export default function NavigationBar(){
 
                             <Menu.Item>
                             <Link href="/blog">
-                                <a className= {router.pathname === "/blog" ? "font-semibold text-blue-400 text-lg bg-blue-200 px-4 rounded": ""}>Blog</a>
+                                <a className= {router.pathname === "/blog" ? "font-semibold text-cyan-700 text-lg bg-blue-100  px-4 rounded": ""}>Blog</a>
                             </Link>
                             </Menu.Item>
 
