@@ -19,22 +19,22 @@ export default function Footer(){
                                 <h className="text-lg font-semibold">Follow Us</h>
                                 <span className="flex flex-row space-x-5 items-center">
 
-                                    <a href="https://www.instagram.com/smartclasstz/" target="_blank">
+                                    <a href="https://www.instagram.com/smartclasstz/" target="_blank" rel="noreferrer">
                                         <InstagramIcon className="text-purple-500"/>
                                     </a>
 
-                                    <a href="https://www.facebook.com/smartclasstz/" target="_blank">
+                                    <a href="https://www.facebook.com/smartclasstz/" target="_blank" rel="noreferrer">
                                         <FaceBookIcon className="text-blue-500" />
                                     </a>
-                                    <a href="https://www.youtube.com/channel/UCxfQRReMYNu2rGgk8B6VY_A" target="_blank">
+                                    <a href="https://www.youtube.com/channel/UCxfQRReMYNu2rGgk8B6VY_A" target="_blank" rel="noreferrer">
                                         <YoutubeIcon/>
                                     </a>
 
-                                    <a href="https://www.facebook.com/smartclasstz/" target="_blank">
+                                    <a href="https://www.facebook.com/smartclasstz/" target="_blank" rel="noreferrer">
                                         <TwitterIcon className="text-blue-500"/>
                                     </a>
 
-                                    <a href="https://www.linkedin.com/company/smartclasstz" target="_blank">
+                                    <a href="https://www.linkedin.com/company/smartclasstz" target="_blank" rel="noreferrer">
                                         <LinkedIn/>
                                     </a>
                                 </span>
