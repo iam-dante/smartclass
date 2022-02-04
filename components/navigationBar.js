@@ -43,7 +43,7 @@ export default function NavigationBar(){
                     <Menu.Button>
                         <MenuIcon/>
                     </Menu.Button>
-                        <Menu.Items className=" bg-slate-100  shadow-xl absolute right-0 px-4 py-4 flex flex-col w-80 rounded-md space-y-4 ">
+                        <Menu.Items className=" bg-slate-100  shadow-xl absolute right-0 px-4 py-4 flex flex-col w-80 rounded-md space-y-4 border-2 border-gray-200">
                             <Menu.Item>
                                 <Link href="/" >
                                     <a className= {router.pathname === "/" ? "font-semibold text-cyan-700 text-lg bg-blue-100 px-4 rounded": ""}>Home</a>
