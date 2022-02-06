@@ -1,81 +1,126 @@
 import { useRouter } from "next/router";
 import Link from "next/link";
-import { Menu } from '@headlessui/react'
+import { Menu } from "@headlessui/react";
 import { MenuIcon } from "./svg";
 import React, { Component } from "react";
 
+export default function NavigationBar() {
+  const router = useRouter();
+  return (
+    <div className=" relative flex flex-row items-center justify-center py-8 px-8 lg:py-2 ">
+      <span className=" absolute left-8 place-self-center text-2xl md:text-4xl ">
+        <h className="">Smart</h>
+        <h className="font-serif text-cyanblue-300">Class</h>
+      </span>
 
+      <div className=" lg: bg- hidden h-12 text-xl  text-slate-500 lg:flex lg:flex-row lg:items-center lg:space-x-14">
+        <Link href="/">
+          <a
+            className={
+              router.pathname === "/"
+                ? "text-2xl font-semibold text-cyanblue-300"
+                : ""
+            }
+          >
+            Home
+          </a>
+        </Link>
 
+        <Link href="/getTutor">
+          <a
+            className={
+              router.pathname === "/getTutor"
+                ? "text-2xl font-semibold text-cyanblue-300"
+                : ""
+            }
+          >
+            Get Tutor
+          </a>
+        </Link>
 
-export default function NavigationBar(){
-    const router = useRouter()
-    return(
-        <div className=" relative flex flex-row justify-center items-center py-8 lg:py-2 px-8 ">
-            <span className=" absolute left-8 text-2xl md:text-4xl place-self-center ">
-                <h className="">Smart</h>
-                <h className="font-serif text-cyanblue-300">Class</h>
-            </span>
+        <Link href="/">
+          <a>Packages</a>
+        </Link>
 
-            <div className=" hidden h-12 lg:flex lg:flex-row lg:items-center  lg: lg:space-x-14 text-xl text-slate-500 bg-">
-                <Link href="/" >
-                    <a className= {router.pathname === "/" ? "font-semibold text-cyanblue-300 text-2xl": ""}>Home</a>
-                </Link>
+        <Link href="/blog">
+          <a
+            className={
+              router.pathname === "/blog"
+                ? "text-2xl font-semibold text-cyanblue-300"
+                : ""
+            }
+          >
+            Blog
+          </a>
+        </Link>
 
-                <Link href="/getTutor">
-                    <a className= {router.pathname === "/getTutor" ? "font-semibold text-cyanblue-300 text-2xl": ""}>Get Tutor</a>
-                </Link>
+        <Link href="/">
+          <a>About Us</a>
+        </Link>
+      </div>
 
-                <Link href="/">
-                    <a>Packages</a>
-                </Link>
+      <div className="absolute right-8 z-40 flex  items-center justify-center lg:hidden">
+        <Menu as="div" className=" z-400  relative inline-block ">
+          <Menu.Button>
+            <MenuIcon />
+          </Menu.Button>
+          <Menu.Items className=" absolute  right-0 flex w-80 flex-col space-y-4 rounded-md border-2 border-gray-300 bg-slate-100 px-4 py-4 shadow-2xl">
+            <Menu.Item>
+              <Link href="/">
+                <a
+                  className={
+                    router.pathname === "/"
+                      ? "rounded bg-blue-100 px-4 text-lg font-semibold text-cyan-700"
+                      : ""
+                  }
+                >
+                  Home
+                </a>
+              </Link>
+            </Menu.Item>
 
-                <Link href="/blog">
-                    <a className= {router.pathname === "/blog" ? "font-semibold text-cyanblue-300 text-2xl": ""}>Blog</a>
-                </Link>
+            <Menu.Item>
+              <Link href="/getTutor">
+                <a
+                  className={
+                    router.pathname === "/getTutor"
+                      ? "rounded bg-blue-100 px-4 text-lg font-semibold text-cyan-700"
+                      : ""
+                  }
+                >
+                  Get Tutor
+                </a>
+              </Link>
+            </Menu.Item>
 
-                <Link href="/">
-                    <a>About Us</a>
-                </Link>
-            </div>
+            <Menu.Item>
+              <Link href="/">
+                <a>Packages</a>
+              </Link>
+            </Menu.Item>
 
-            <div className="lg:hidden absolute right-8 flex  justify-center items-center z-40">
-                <Menu  as="div" className=" relative  z-400 inline-block ">
-                    <Menu.Button>
-                        <MenuIcon/>
-                    </Menu.Button>
-                        <Menu.Items className=" bg-slate-100  shadow-2xl absolute right-0 px-4 py-4 flex flex-col w-80 rounded-md space-y-4 border-2 border-gray-300">
-                            <Menu.Item>
-                                <Link href="/" >
-                                    <a className= {router.pathname === "/" ? "font-semibold text-cyan-700 text-lg bg-blue-100 px-4 rounded": ""}>Home</a>
-                                </Link>
-                            </Menu.Item>
+            <Menu.Item>
+              <Link href="/blog">
+                <a
+                  className={
+                    router.pathname === "/blog"
+                      ? "rounded bg-blue-100 px-4 text-lg  font-semibold text-cyan-700"
+                      : ""
+                  }
+                >
+                  Blog
+                </a>
+              </Link>
+            </Menu.Item>
 
-                            <Menu.Item>
-                                <Link href="/getTutor">
-                                    <a className= {router.pathname === "/getTutor" ? "font-semibold text-cyan-700 text-lg bg-blue-100 px-4 rounded": ""}>Get Tutor</a>
-                                </Link>
-                            </Menu.Item>
-
-                            <Menu.Item>
-                            <Link href="/">
-                                <a>Packages</a>
-                            </Link>
-                            </Menu.Item>
-
-                            <Menu.Item>
-                            <Link href="/blog">
-                                <a className= {router.pathname === "/blog" ? "font-semibold text-cyan-700 text-lg bg-blue-100  px-4 rounded": ""}>Blog</a>
-                            </Link>
-                            </Menu.Item>
-
-                            <Menu.Item>
-                            <Link href="/">
-                                <a>About Us</a>
-                            </Link>
-                            </Menu.Item>
-                        </Menu.Items>
-                </Menu>
-            </div>
-        </div>
-    )
+            <Menu.Item>
+              <Link href="/">
+                <a>About Us</a>
+              </Link>
+            </Menu.Item>
+          </Menu.Items>
+        </Menu>
+      </div>
+    </div>
+  );
 }

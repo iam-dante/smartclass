@@ -1,6 +1,5 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-
 ## Figma Design
 
 Link: https://www.figma.com/file/QGqk5mbG4Ds8N3uclmnGM3/smartclass?node-id=2%3A2
