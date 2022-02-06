@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Listbox, Transition } from "@headlessui/react";
 
-import { FindSvg } from "../components/svg";
+import { DropIcon, FindSvg } from "../components/svg";
 import NavigationBar from "../components/navigationBar";
 import Footer from "../components/Footer";
 
@@ -36,7 +36,7 @@ export default function GetTutor() {
 
   return (
     <div>
-      <div className="h-screen bg-cyanblue-100">
+      <div className="bg-cyanblue-100 h-screen">
         <NavigationBar />
         <div className="grid-row-1 lg:grid-row-none grid lg:grid-cols-2">
           <div className="hidden items-center justify-center lg:flex ">
@@ -49,8 +49,9 @@ export default function GetTutor() {
                   <Listbox.Label className=" text-lg font-medium">
                     Category :
                   </Listbox.Label>
-                  <Listbox.Button className=" flex h-12 items-center rounded-md border-2 border-cyanblue-300 px-4">
+                  <Listbox.Button className="border-cyanblue-300 relative flex h-12 items-center rounded-md border-2 px-4">
                     {statecategory.name}
+                    <DropIcon className="absolute right-4" />
                   </Listbox.Button>
                   <Transition
                     enter="transition duration-100 ease-out"
@@ -60,7 +61,7 @@ export default function GetTutor() {
                     leaveFrom="transform scale-100 opacity-100"
                     leaveTo="transform scale-95 opacity-0"
                   >
-                    <Listbox.Options className=" absolute z-20 w-full space-y-1 rounded-md border-2 border-cyanblue-100 bg-slate-100 px-2 py-2 drop-shadow-lg">
+                    <Listbox.Options className=" border-cyanblue-100 absolute z-20 w-full space-y-1 rounded-md border-2 bg-slate-100 px-2 py-2 drop-shadow-lg">
                       {category.map((ct) => (
                         <Listbox.Option
                           key={ct.id}
@@ -79,8 +80,9 @@ export default function GetTutor() {
                   <Listbox.Label className=" text-lg font-medium">
                     Subject :
                   </Listbox.Label>
-                  <Listbox.Button className=" flex h-12 items-center rounded-md border-2 border-cyanblue-300 px-4">
+                  <Listbox.Button className=" border-cyanblue-300 flex h-12 items-center rounded-md border-2 px-4">
                     {statesubject.name}
+                    <DropIcon className="absolute right-4" />
                   </Listbox.Button>
                   <Transition
                     enter="transition duration-100 ease-out"
@@ -90,7 +92,7 @@ export default function GetTutor() {
                     leaveFrom="transform scale-100 opacity-100"
                     leaveTo="transform scale-95 opacity-0"
                   >
-                    <Listbox.Options className=" absolute z-10 w-full space-y-1 rounded-md border-2 border-cyanblue-100 bg-slate-100 px-2 py-2 drop-shadow-lg">
+                    <Listbox.Options className=" border-cyanblue-100 absolute z-10 w-full space-y-1 rounded-md border-2 bg-slate-100 px-2 py-2 drop-shadow-lg">
                       {subject.map((ct) => (
                         <Listbox.Option
                           key={ct.id}
@@ -109,8 +111,9 @@ export default function GetTutor() {
                   <Listbox.Label className=" text-lg font-medium">
                     Level :
                   </Listbox.Label>
-                  <Listbox.Button className=" flex h-12 items-center rounded-md border-2 border-cyanblue-300 px-4">
+                  <Listbox.Button className=" border-cyanblue-300 flex h-12 items-center rounded-md border-2 px-4">
                     {statelevel.name}
+                    <DropIcon className="absolute right-4" />
                   </Listbox.Button>
                   <Transition
                     enter="transition duration-100 ease-out"
@@ -120,7 +123,7 @@ export default function GetTutor() {
                     leaveFrom="transform scale-100 opacity-100"
                     leaveTo="transform scale-95 opacity-0"
                   >
-                    <Listbox.Options className=" absolute z-10 w-full space-y-1 rounded-md border-2 border-cyanblue-100 bg-slate-100 px-2 py-2 drop-shadow-lg">
+                    <Listbox.Options className=" border-cyanblue-100 absolute z-10 w-full space-y-1 rounded-md border-2 bg-slate-100 px-2 py-2 drop-shadow-lg">
                       {level.map((ct) => (
                         <Listbox.Option
                           key={ct.id}
@@ -139,8 +142,9 @@ export default function GetTutor() {
                   <Listbox.Label className=" text-lg font-medium">
                     Tuition :
                   </Listbox.Label>
-                  <Listbox.Button className=" flex h-12 items-center rounded-md border-2 border-cyanblue-300 px-4">
+                  <Listbox.Button className=" border-cyanblue-300 flex h-12 items-center rounded-md border-2 px-4">
                     {statelevel.name}
+                    <DropIcon className="absolute right-4" />
                   </Listbox.Button>
                   <Transition
                     enter="transition duration-100 ease-out"
@@ -150,7 +154,7 @@ export default function GetTutor() {
                     leaveFrom="transform scale-100 opacity-100"
                     leaveTo="transform scale-95 opacity-0"
                   >
-                    <Listbox.Options className=" absolute z-10 w-full space-y-1 rounded-md border-2 border-cyanblue-100 bg-slate-100 px-2 py-2 drop-shadow-lg">
+                    <Listbox.Options className=" border-cyanblue-100 absolute z-10 w-full space-y-1 rounded-md border-2 bg-slate-100 px-2 py-2 drop-shadow-lg">
                       {level.map((ct) => (
                         <Listbox.Option
                           key={ct.id}
@@ -164,11 +168,12 @@ export default function GetTutor() {
                     </Listbox.Options>
                   </Transition>
                 </Listbox>
-
-                <h className="text-slate-400">Optional</h>
-                <label>Number of student</label>
+                <div>
+                  <label>Number of student</label>
+                  <h className="ml-2 text-slate-400">Optional*</h>
+                </div>
                 <input
-                  className="h-12 rounded-md px-4 outline-none focus:outline-cyanblue-300"
+                  className="focus:outline-cyanblue-300 h-12 rounded-md px-4 outline-none"
                   placeholder="Number of students"
                 />
                 <div className="flex justify-end">
