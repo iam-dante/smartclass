@@ -10,7 +10,7 @@ export default function NavigationBar() {
     <div className=" relative flex flex-row items-center justify-center py-8 px-8 lg:py-2 ">
       <span className=" absolute left-8 place-self-center text-2xl md:text-4xl ">
         <h className="">Smart</h>
-        <h className="font-serif text-cyanblue-300">Class</h>
+        <h className="text-cyanblue-300 font-serif">Class</h>
       </span>
 
       <div className=" lg: bg- hidden h-12 text-xl  text-slate-500 lg:flex lg:flex-row lg:items-center lg:space-x-14">
@@ -18,8 +18,8 @@ export default function NavigationBar() {
           <a
             className={
               router.pathname === "/"
-                ? "text-2xl font-semibold text-cyanblue-300"
-                : ""
+                ? "text-cyanblue-300 text-2xl font-semibold"
+                : "hover:text-cyanblue-300 hover:text-2xl"
             }
           >
             Home
@@ -30,8 +30,8 @@ export default function NavigationBar() {
           <a
             className={
               router.pathname === "/getTutor"
-                ? "text-2xl font-semibold text-cyanblue-300"
-                : ""
+                ? "text-cyanblue-300 text-2xl font-semibold"
+                : "hover:text-cyanblue-300 hover:text-2xl"
             }
           >
             Get Tutor
@@ -39,15 +39,15 @@ export default function NavigationBar() {
         </Link>
 
         <Link href="/">
-          <a>Packages</a>
+          <a className="hover:text-cyanblue-300 hover:text-2xl">Packages</a>
         </Link>
 
         <Link href="/blog">
           <a
             className={
               router.pathname === "/blog"
-                ? "text-2xl font-semibold text-cyanblue-300"
-                : ""
+                ? "text-cyanblue-300 text-2xl font-semibold"
+                : "hover:text-cyanblue-300 hover:text-2xl"
             }
           >
             Blog
@@ -55,7 +55,7 @@ export default function NavigationBar() {
         </Link>
 
         <Link href="/">
-          <a>About Us</a>
+          <a className="hover:text-cyanblue-300 hover:text-2xl">About Us</a>
         </Link>
       </div>
 
